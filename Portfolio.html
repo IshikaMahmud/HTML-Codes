@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-eqiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="extra.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<title>Portfolio</title>
+<style>
+body{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:arial;
+}
+header{
+width:100%;
+height:70px;
+position:fixed;
+top:0;
+background-color:#fff;
+z-index:1;
+}
+header div{
+float:left;
+justify-content:space-between;
+align-items:center;
+}
+header .logo{
+margin-left:200px;
+padding:20px;
+}
+header .nav{
+position:absolute;
+top:0;
+right:0;
+margin-right:200px;
+}
+header .nav ul{
+list-style:none;
+}
+header .nav ul li{
+float:left;
+padding-right:40px;
+padding-top:10px;
+}
+header .nav ul li a{
+text-decoration:none;
+color:rgb(41,41,41);
+text-transform:uppercase;
+font-size:12px;
+font-weight:bold;
+}
+header .nav ul li a:hover{
+color:#7f97ff;
+}
+.section1{
+background-color:#f9f9ff;
+width:100%;
+height:665;
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:75px;
+}
+.half1 .half2{
+width:50%;
+}
+.half1{
+margin-left:230px;
+margin-bottom:120px;
+}
+.half2{
+padding-right:160px;
+margin-top:50px;
+}
+.half2 img{
+max-width:100%;
+height:auto;
+}
+.half1 h3{
+font-weight:normal;
+}
+.half1 h1{
+font-size:60px;
+}
+.half1 p{
+color:rgba(78,78,78,0.7);
+}
+.half1 input{
+padding:8px 20px;
+background-color:#8393ff;
+outline:none;
+color:white;
+border:1px solid #8393ff;
+font-size:15px;
+cursor:pointer;
+}
+.half1 input:hover{
+box-shadow:5px 10px 30px rgba(130,147,255,0.5);
+transition:all 0.5s ease-in 0.1s;
+outline:none;
+}
+.section2{
+width:100%;
+height:620px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.section2 div{
+width:40%;
+margin:0 auto;
+}
+.section2 img{
+width:90%;
+height:auto;
+}
+.section2 .img2{
+padding-left:150px;
+}
+.text2 h3{
+font-weight:normal;
+color:rgba(0,0,0,0.7);
+font-size:15px;
+}
+.text2 h1{
+font-weight:bold;
+font-size:40px;
+}
+.text2 p{
+font-size:16px;
+color:rgba(0,0,0,0.6);
+width:80%;
+}
+.text2 input{
+font-size:20px;
+padding:12px 16px;
+outline:none;
+color:white;
+background-color:#8293ff;
+border:none;
+}
+.text2 input:hover{
+box-shadow:5px 10px 30px rgba(130,147,255,0.5);
+transition:all 0.5s ease-in 0.1s;
+outline:none;
+}
+.section3{
+width:100%;
+height:650px;
+margin:0 auto;
+text-align:center;
+}
+.firsttext h1{
+font-size:40px;
+line-height:10px;
+}
+.firsttext p{
+width:670px;
+color:rgba(0,0,0,0.6);
+margin:0 auto;
+}
+.service{
+width:80%;
+margin:0 auto;
+padding-top:45px;
+}
+.ser1, .ser2{
+width:100%;
+overflow:hidden;
+}
+.ser2{
+padding-top:30px;
+}
+.ser1 div, .ser2 div{
+width:32%;
+float:left;
+padding:5px;
+margin:0 auto;
+}
+.service i{
+font-size:45px;
+color:rgba(0,0,0,0.7);
+}
+.service h1{
+color:rgba(0,0,0,0.9);
+}
+.service p{
+color:rgba(0,0,0,0.6);
+}
+.ser1 div:hover{
+background-color:#8293ff;
+}
+.ser1 div:hover p{
+color:white;
+}
+.ser1 div:hover i{
+color:white;
+}
+.ser1 div:hover h1{
+color:white;
+}
+.ser2 div:hover{
+background-color:#8293ff;
+}
+.ser2 div:hover i{
+color:white;
+}
+.ser2 div:hover h1{
+color:white;
+}
+.ser2 div:hover p{
+color:white;
+}
+.section4{
+width:100%;
+height:260px;
+background-color:#8293ff;
+}
+.section4 div{
+float:left;
+width:20%;
+margin:0 auto;
+position:relative;
+top:100px;
+left:200px;
+}
+.section4 h1{
+font-size:45px;
+line-height:0px;
+}
+.section4 h1,p{
+text-align:center;
+color:white;
+}
+.section5{
+width:100%;
+box-sizing:border-box;
+}
+.section5 .text3{
+text-align:center;
+padding:100px 0;
+}
+.section5 .text3 h1{
+font-size:40px;
+color:rgba(0,0,0,0.9);
+}
+.section5 .text3 p{
+color:rgba(0,0,0,0.7);
+margin-top:-20px;
+margin-bottom:30px;
+}
+.section5 .imgg{
+width:75%;
+height:auto;
+display:flex;
+justify-content:space-around;
+flex-wrap:wrap;
+margin:0 auto;
+}
+.section5 .imgg div{
+width:440px;
+height:439px;
+padding-bottom:150px;
+text-align:center;
+} 
+.section5 .imgg h1{
+font-size:20px;
+color:rgba(0,0,0,0.9);
+} 
+.section5 .imgg p{  
+color:rgba(0,0,0,0.7);
+line-height:0;
+}     
+.section5 figure{
+background-color:linear-gradient(40deg,#8490ff 40%,#62bdfc 100%);
+width:440px;
+height:439px;
+margin:0;
+padding:0;
+overflow:hidden;
+border-radius:3%;
+}        
+.section5 figure:hover img{
+opacity:0.3;
+transition:all .3s ease-in-out;
+}    
+.section6{
+width:100%;
+height:700px;
+padding-top:50px;
+}          
+.section6 .text4{
+text-align:center;
+padding:2% 0;
+}           
+.section6 .text4 h1{       
+font-size:40px;
+line-height:0;
+padding-top:15px;    
+}         
+.section6 .text4 p{ 
+color:rgba(0,0,0,0.7);
+}
+.section6 .card{
+width:75%;
+height:auto;
+display:flex;
+justify-content:space-around;
+margin:0 auto;
+}
+.section6 .card1{
+background-color:rgb(249,249,255);
+text-align:center;
+border:1px solid rgba(0,0,0,0.1);
+}
+.section6 .card1 h1{
+font-size:50px;
+padding-top:8px;
+}
+.section6 .card1 .price{
+font-size:40px;
+}
+.section6 .card1 input{
+outline:none;
+background-color:#8293ff;
+color:white;
+font-size:25px;
+padding:6px 60px;
+font-weight:bold;
+border:1px solid white;
+cursor:pointer;
+}
+.section6 .card1:hover{
+background-color:#8293ff;
+color:white;
+transition:all 0.25s ease-in;
+transform:scale(1.05);
+border:1px solid rgba(130,147,255,0.5);
+box-shadow:0 8px 12px 0 rgba(0,0,0,0.5);
+}
+.section6 .card1:hover input{
+color:rgba(0,0,0,0.9);
+background-color:white;
+}
+footer{
+background-color:rgb(4,9,30);
+width:100%;
+height:400px;
+position:absolute;
+color:white;
+margin-top:50px;
+}
+footer .foot{
+width:80%;
+height:auto;
+display:flex;
+justify-content:space-around;
+margin:0 auto;
+margin-top:120px;
+}
+footer .foot .foot1 p{
+color:rgba(255,255,255,0.5);
+}
+footer .foot .foot1 input{
+font-size:15px;
+outline:none;
+border:none;
+padding:10px 150px 10px 10px;
+}
+footer .foot .foot1 button{
+font-size:18px;
+color:white;
+background-color:#8293ff;
+outline:none;
+border:none;
+cursor:pointer;
+padding:8px 15px;
+}
+footer .foot .foot1 i{
+font-size:15px;
+cursor:pointer;
+padding:2px 5px;
+}
+footer .foot .foot1 i:hover{
+color:#8293ff;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">
+<img src="personal.png">
+</div>
+<div class="nav">
+<ul>
+<li><a href="#" style="color:#7f97ff;">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Portfolio</a></li>
+<li><a href="#">Pricing</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+</header>
+<section class="section1">
+<div class="half1">
+<h3>This is me</h3>
+<h1>PHILIP GILBERT</h1>
+<p>You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost showing Scrooge some different futures.</p>
+<input type="button" value="DISCOVER NOW">
+</div>
+<div class="half2">
+<img src="hero-img.webp">
+</div>
+</section>
+<section class="section2">
+<div class="img2">
+<img src="about-img.png.webp">
+</div>
+<div class="text2">
+<h3>About Me</h3>
+<h1>PERSONAL DETAILS</h1>
+<p>Here, I focus on a range of items and features that we use in life without giving them a second thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+<input type"button" value="VIEW FULL DETAILS">
+</div>
+</section>
+<section class="section3">
+<div class="firsttext">
+<h1>My Offered Services</h1>
+<p>At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected.</p>
+</div>
+<div class="service">
+<div class="ser1">
+<div>
+<i class="far fa-chart-pie-alt"></i>
+<h1>Web Design</h1>
+<p>“It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”</p>
+</div>
+<div>
+<i class="fas fa-phone-laptop"></i>
+<h1>Web Development</h1>
+<p>If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions.</p>
+</div>
+<div>
+<i class="fas fa-camera"></i>
+<h1>Photography</h1>
+<p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills.</p>
+</div>
+</div>
+<div class="ser2">
+<div>
+<i class="fab fa-windows"></i>
+<h1>Clipping Path</h1>
+<p>Hypnosis quit smoking methods maintain caused quite a stir in the medical world over the last two decades. There is a lot of argument.</p>
+</div>
+<div>
+<i class="fas fa-tablet-alt"></i>
+<h1>Apps Interface</h1>
+<p>Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of my conflicts.</p>
+</div>
+<div>
+<i class="fas fa-rocket"></i>
+<h1>Graphic Design</h1>
+<p>You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section4">
+<div>
+<h1>2536</h1>
+<p>Projects Completed</p>
+</div>
+<div>
+<h1>6784</h1>
+<p>Happy Clients</p>
+</div>
+<div>
+<h1>2239</h1>
+<p>Cups of Coffee</p>
+</div>
+<div>
+<h1>434</h1>
+<p>Real Professionals</p>
+</div>
+</section>
+<section class="section5">
+<div class="text3">
+<h1>Our Latest Featured Projects</h1>
+<p>Who are in extremely love with eco friendly system.</p>
+</div>
+<div class="imgg">
+<div>
+<figure>
+<img src="xp1.jpg.pagespeed.ic.FOreiUJAg3.webp">
+</figure>
+<h2>2D Vinyl Design</h2>
+<p>vector</p>
+</div>
+<div>
+<figure>
+<img src="xp2.jpg.pagespeed.ic.GgrERj-H7Z.webp">
+</figure>
+<h2>2D Vinyl Design</h2>
+<p>vector</p>
+</div>
+<div>
+<figure>
+<img src="xp3.jpg.pagespeed.ic.aMbDLTyvVL.webp">
+</figure>
+<h2>Creative Poster Design</h2>
+<p>Agency</p>
+</div>
+<div>
+<figure>
+<img src="xp4.jpg.pagespeed.ic.vWuNW5DEnN.webp">
+</figure>
+<h2>Embosed Logo Design</h2>
+<p>Portal</p>
+</div>
+<div>
+<figure>
+<img src="xp5.jpg.pagespeed.ic.WCqR6msXXo.webp">
+</figure>
+<h2>3D Helmet Design</h2>
+<p>vector</p>
+</div>
+<div>
+<figure>
+<img src="xp6.jpg.pagespeed.ic.6J7rUz-VxE.webp">
+</figure>
+<h2>2D Vinyl Design</h2>
+<p>raster</p>
+</div>
+</div>
+</section>
+<section class="section6">
+<div class="text4">
+<h1>Choose Your Plan</h1>
+When someone does something that they know that they shouldn’t do, did they.
+</div>
+<div class="card">
+<div class="card1">
+<h1>01</h1>
+<h2>Economy</h2>
+For the individuals
+<hr>
+Secure Online Transfer
+<hr>
+Unlimited Styles for interface
+<hr>
+Reliable Customer Service
+<hr>
+<h1 class="price">>$199.00</h1>
+<input type="button" value="Buy Now">
+</div>
+<div class="card1">
+<h1>02</h1>
+<h2>Business</h2>
+For the individuals
+<hr>
+Secure Online Transfer
+<hr>
+Unlimited Styles for interface
+<hr>
+Reliable Customer Service
+<hr>
+<h1 class="price">>$299.00</h1>
+<input type="button" value="Buy Now">
+</div>
+<div class="card1">
+<h1>03</h1>
+<h2>Premium</h2>
+For the individuals
+<hr>
+Secure Online Transfer
+<hr>
+Unlimited Styles for interface
+<hr>
+Reliable Customer Service
+<hr>
+<h1 class="price">>$399.00</h1>
+<input type="button" value="Buy Now">
+</div>
+<div class="card1">
+<h1>04</h1>
+<h2>Exclusive</h2>
+For the individuals
+<hr>
+Secure Online Transfer
+<hr>
+Unlimited Styles for interface
+<hr>
+Reliable Customer Service
+<hr>
+<h1 class="price">$499.00</h1>
+<input type="button" value="Buy Now">
+</div>
+</div>
+</section>
+<footer>
+<div class="foot">
+<div class="foot1">
+<h3>About Me</h3>
+<p style="width:480px">We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.</p>
+<p>Copyright ©2021 All rights reserved | IM</p>
+</div>
+<div class="foot1">
+<h3>Newsletter</h3>
+<P>Stay updated with our latest trends</p> 
+<input type="text" placeholder="Enter Email Adress">
+<button>Send</button>
+</div>
+<div class="foot1">
+<h3>Follow Me</h3>
+<p>Let us be social</p> 
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-youtube"></i>
+</div>
+</div>
+</footer>
+</body>
+</html>
+                                                         
